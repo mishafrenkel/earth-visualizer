@@ -3,7 +3,7 @@
     "description": "Earth",
     "version": "0.0.1",
     "private": true,
-    "main": "/public",
+    "main": "/public/templates/index.html",
     "author": {
         "name": "Michael Frenkel",
         "email": "mishafrenkel@gmail.com"
