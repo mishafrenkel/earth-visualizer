@@ -3,14 +3,19 @@
     "description": "Earth",
     "version": "0.0.1",
     "private": true,
+    "main": "/public",
     "author": {
-        "name": "Cameron Beccario",
-        "email": "cambecc@nullschool.net"
+        "name": "Michael Frenkel",
+        "email": "mishafrenkel@gmail.com"
     },
-    "homepage": "https://github.com/cambecc/earth",
+    "scripts": {
+        "test": "mocha --timeout 10000",
+        "start": "node server.js"
+    },
+    "homepage": "",
     "repository": {
         "type": "git",
-        "url": "git://github.com/cambecc/earth.git"
+        "url": ""
     },
     "engine": "node >= 0.10.21",
     "dependencies": {
