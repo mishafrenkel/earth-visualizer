@@ -1,1 +1,1 @@
-web: node public/templates/index.html
+web: node server.js
