@@ -4,8 +4,8 @@
 
 "use strict";
 
-console.log("============================================================");
-console.log(new Date().toISOString() + " - Starting");
+// console.log("============================================================");
+// console.log(new Date().toISOString() + " - Starting");
 
 var util = require("util");
 
@@ -44,12 +44,14 @@ function cacheControl() {
 var port = process.env.PORT || 3000
 var express = require("express");
 var app = express();
+var favicon = require('express-favicon');
 
 app.use(cacheControl());
+app.use(favicon(__dirname + '/public/favicon.ico'));
+
 app.use(express.compress({ filter: compressionFilter }));
-app.use(logger());
 app.use(express.static(__dirname + "/public"));
-app.use('/', express.static(__dirname + "/public"));
+// app.use('/', express.static(__dirname + "/public"));
 
 
 app.listen(port);
